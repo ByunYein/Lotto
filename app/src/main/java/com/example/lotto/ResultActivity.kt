@@ -15,7 +15,7 @@ class ResultActivity : AppCompatActivity() {
 
         val result = intent.getIntegerArrayListExtra("result")
         result?.let{
-            updateLottoBallImages(result.sortedBy { it })
+           updateLottoBallImages(result.sortedBy { it })
         }
       // val result_sorted = result?.sorted()
         //println("result id $result")
@@ -33,10 +33,10 @@ class ResultActivity : AppCompatActivity() {
         val lottoBallImageStartId = R.drawable.ball_01
 
         val imageView1 = findViewById<ImageView>(R.id.imageView3)
-        val imageView2 = findViewById<ImageView>(R.id.imageView4)
+        val imageView2 = findViewById<ImageView>(R.id.imageView6)
         val imageView3 = findViewById<ImageView>(R.id.imageView5)
-        val imageView4 = findViewById<ImageView>(R.id.imageView6)
-        val imageView5 = findViewById<ImageView>(R.id.imageView7)
+        val imageView4 = findViewById<ImageView>(R.id.imageView7)
+        val imageView5 = findViewById<ImageView>(R.id.imageView4)
         val imageView6 = findViewById<ImageView>(R.id.imageView8)
 
         imageView1.setImageResource(lottoBallImageStartId+result_sorted!![0]-1)

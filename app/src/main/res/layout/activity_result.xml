@@ -55,17 +55,6 @@
         app:layout_constraintVertical_bias="0.538" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/guideline5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView8"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toBottomOf="@id/guideline4"
-        app:srcCompat="@drawable/ball_02" />
-
-    <ImageView
         android:id="@+id/imageView3"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
@@ -76,6 +65,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/guideline4"
         app:srcCompat="@drawable/ball_01" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ball_02" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@id/guideline4"
+        app:srcCompat="@drawable/ball_03" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -109,17 +121,6 @@
         app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@id/guideline4"
         app:srcCompat="@drawable/ball_06" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/guideline5"
-        app:layout_constraintEnd_toStartOf="@+id/imageView7"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@id/guideline4"
-        app:srcCompat="@drawable/ball_03" />
 
     <ImageView
         android:id="@+id/imageView9"
