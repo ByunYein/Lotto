@@ -9,6 +9,8 @@ import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,33 +36,28 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
     }
-}
+    fun getRandomLottoNumber(): Int{
 
-fun getRandomLottoNumber(): Int{
+        return Random().nextInt(45)+1
+    }
 
-    return Random().nextInt(45)+1
-}
+    fun getRandomLottoNumbers(): MutableList<Int> {
+        val lottoNumbers = mutableListOf<Int>()
+        for(i in 1..6){
 
-fun getRandomLottoNumbers(): MutableList<Int> {
-    val lottoNumbers = mutableListOf<Int>()
-    while(true) {
-        var number: Int = getRandomLottoNumber()
-        var flag_existing: Int = 0
-        for (j in 0..lottoNumbers.size) {
-            if (number.equals(lottoNumbers[j])) {
-                flag_existing = 1
-                break;
-            }
-        }
-        if (flag_existing.equals(1))
-            continue
-        else
+            var number = 0
+
+            do{
+                number = getRandomLottoNumber()
+            }while(lottoNumbers.contains(number))
             lottoNumbers.add(number)
-        if (lottoNumbers.size >= 6)
-            break;
+        }
 
+        return lottoNumbers
     }
 
-    return lottoNumbers
 }
+
+
