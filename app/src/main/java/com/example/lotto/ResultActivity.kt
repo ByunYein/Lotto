@@ -2,6 +2,7 @@ package com.example.lotto
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -26,13 +27,11 @@ class ResultActivity : AppCompatActivity() {
        // println("result_sorted is" + result_sorted)
 
 
-
-
     }
     private  fun updateLottoBallImages(result_sorted:List<Int>){
         val lottoBallImageStartId = R.drawable.ball_01
 
-        val imageView1 = findViewById<ImageView>(R.id.imageView3)
+        val imageView1 = findViewById<ImageView>(R.id.imageView3)//이미지뷰가 섞여서 sorted가 순서대로 올수있도록 바꿨습니다.
         val imageView2 = findViewById<ImageView>(R.id.imageView6)
         val imageView3 = findViewById<ImageView>(R.id.imageView5)
         val imageView4 = findViewById<ImageView>(R.id.imageView7)
